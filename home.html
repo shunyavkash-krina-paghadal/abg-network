@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/home.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="fonts/round-text/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="fonts/fonts/nunito-font/stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="css/media.css" type="text/css" >
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
 <!-- HEADER -->
 
-<header  class="navbar">
-    <div class="container">
-        <div class="d-flex justify-between align-center">
-            <div class="logo">
-                <img src="images/icons/call.svg" class="logo-img" title="call.svg" alt="call.svg"/>
-                <span class="header-span">01234 567890 - Mon-Fri 9am to 6.30pm</span>
-            </div>
-            <div class="header-icons">
-                <a><img src="images/icons/linkdin.png"/></a>
-                <a><img src="images/icons/facebook.png"/></a>
-                <a><img src="images/icons/insta.png"/></a>
-                <a><img src="images/icons/twiiter.png"/></a>
+<header>
+    <div class="topbar">
+        <div class="container">
+            <div class="d-flex justify-between align-center">
+                <div class="logo">
+                    <img src="images/icons/call.svg" class="logo-img" title="call.svg" alt="call.svg"/>
+                    <span class="header-span">01234 567890 - Mon-Fri 9am to 6.30pm</span>
+                </div>
+                <div class="header-icons">
+                    <a href="javascript:void(0)"><img src="images/icons/linkdin.png"/></a>
+                    <a href="javascript:void(0)"><img src="images/icons/facebook.png"/></a>
+                    <a href="javascript:void(0)"><img src="images/icons/insta.png"/></a>
+                    <a href="javascript:void(0)"><img src="images/icons/twiiter.png"/></a>
+                </div>
             </div>
         </div>
-        <div class="navigation">
+    </div>
+    <div class="navigation">
             <div class="container">
                 <div class="d-flex justify-between align-center">
                     <div class="white-logo">
@@ -36,16 +39,21 @@
                     </div>
                     <nav>
                        <ul class="d-flex align-center">
-                           <li><a>Who We Are</a></li>
-                           <li><a>Tesitimonial</a></li>
-                           <li><a>News & Articles</a></li>
+                           <li><a href="javascript:void(0)">Who We Are</a></li>
+                           <li><a href="javascript:void(0)">Tesitimonial</a></li>
+                           <li><a href="javascript:void(0)">News & Articles</a></li>
                            <button class="button">Get In Touch</button>
+                           
                        </ul>
                     </nav>
+                    <div class="toggle">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  
+                        stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2   ">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+     </div>
 </header>
 
 <!-- ENDS HEADER -->
@@ -55,7 +63,7 @@
 <section class="banner">
     <div class="container"></div>
       <div class="d-flex">
-            <div class="banner-content">
+            <div class="banner-content w-sm-1">
                 <h1 class="banner-heading">Welcome to ABG Network</h1>
                 <p class="richtext">No other courier company makes deliveries as easy as we do</p>
                 <div class="btn">
@@ -71,8 +79,8 @@
 
 <section class="two-section">
     <div class="container">
-        <div class="d-flex">
-            <div class="w-2">
+        <div class="row">
+            <div class="w-2 w-sm-1">
                 <div class="two-items">
                     <div class="two-col-img">
                         <img src="images/background/banner-2.png" width="100%" alt="banner-2" title="banner-2"/>
@@ -80,13 +88,13 @@
                     <div class="two-col-content">
                          <h1 class="two-col-heading">Buying a franchise</h1>
                           <div class="two-con d-flex align-center">
-                            <p class="richtext">GET STARTED</p>
-                            <img src="images/icons/aerrow.png" class="aerrow" width ="21px" title="aerrow"  alt="aerrow"/>
+                            <p class="richtext">GET STARTED <img src="images/icons/aerrow.png" class="aerrow" width ="21px" title="aerrow"  alt="aerrow"/></p>
+                           
                           </div>
                     </div>
                 </div>
             </div>
-            <div class="w-2">
+            <div class="w-2 w-sm-1">
                 <div class="two-items">
                     <div class="two-col-img">
                         <img src="images/background/banner-3.png" width="100%" alt="banner-3" title="banner-3"/>
@@ -94,8 +102,8 @@
                     <div class="two-col-content">
                         <h1 class="two-col-heading">Help with Deliveries</h1>
                         <div class="two-con d-flex align-center">
-                            <p class="richtext">GET STARTED</p>
-                            <img src="images/icons/aerrow.png" class="aerrow" width ="21px" title="aerrow"  alt="aerrow"/>
+                            <p class="richtext">GET STARTED<img src="images/icons/aerrow.png" class="aerrow" width ="21px" title="aerrow"  alt="aerrow"/></p>
+                            
                           </div>
                    </div>
                 </div>
@@ -112,8 +120,8 @@
 <section class="we-do">
    <div class="container">
       <div class="we-do-innner">
-          <div class="d-flex align-center">
-              <div class="w-2">
+          <div class="row align-center">
+              <div class="w-xxl-2 w-sm-1">
                  <div class="we-items">
                     <div class="we-content">
                          <h5 class="we-heading">OUR STORY</h5>
@@ -125,7 +133,7 @@
                     </div>
                  </div>
               </div>
-              <div class="w-2">
+              <div class="w-xxl-2 w-sm-1">
                 <div class="we-items">
                    <div class="we-imges">
                        <img src="images/background/we-img.png" width="100%" title="we-img" alt="we-img"/>
@@ -144,33 +152,33 @@
 
 <section class="logos">
     <div class="container">
-        <div class="d-flex">
-            <div class="w-6">
+        <div class="row text-center ">
+            <div class="w-6 w-md-3 w-sm-2">
                 <div class="logos-items">
                     <img src="images/background/logo-1.png"  width="130px"  title="logos" width="100%" alt="logos"/>
                 </div>
             </div>
-            <div class="w-6">
+            <div class="w-6 w-md-3 w-sm-2">
                 <div class="logos-items">
                     <img src="images/background/logo-2.png"  width="130px"  title="logos" width="100%" alt="logos"/>
                 </div>
             </div>
-            <div class="w-6">
+            <div class="w-6 w-md-3 w-sm-2">
                 <div class="logos-items">
                     <img src="images/background/logo-3.png"  width="130px"  title="logos" width="100%" alt="logos"/>
                 </div>
             </div>
-            <div class="w-6">
+            <div class="w-6 w-md-3 w-sm-2">
                 <div class="logos-items">
                     <img src="images/background/logo-4.png"  width="130px"  title="logos" width="100%" alt="logos"/>
                 </div>
             </div>
-            <div class="w-6">
+            <div class="w-6 w-md-3 w-sm-2">
                 <div class="logos-items">
                     <img src="images/background/logo-5.png"  width="130px"  title="logos" width="100%" alt="logos"/>
                 </div>
             </div>
-            <div class="w-6">
+            <div class="w-6 w-md-3 w-sm-2">
                 <div class="logos-items">
                     <img src="images/background/logo-6.png"  width="130px"  title="logos" width="100%" alt="logos"/>
                 </div>
@@ -181,8 +189,135 @@
 
 <!-- ENDS-LOGO -->
 
+<!-- BLOGS -->
+
+<section class="services">
+    <div class="container">
+       <div class="services-title text-center d-flex justify-between align-center">
+             <h4  class="services-heading">Latest News</h4>
+              <a href="javascript:;void(0)" >View All</a>
+       </div>
+          <div class="services-inner">
+              <div class="row">
+                  <div class="w-3 w-md-2 w-sm-1">
+                      <div class="services-items">
+                         <div class="services-img">
+                             <img src="images/background/services-1.png" title="services-1" alt="services-1" width="100%"/>
+                         </div>
+                  
+                         <div class="services-content">
+                            <h4>GENERAL NEWS</h4>
+                            <h5>Creating a courier business plan</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
+                                aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
+                            <img src="images/icons/aerrow.png" title="aerrow" alt="aerrow" />
+                          </div>
+                      </div>
+              
+                  </div>
+
+                  <div class="w-3 w-md-2 w-sm-1">
+                    <div class="services-items">
+                       <div class="services-img">
+                           <img src="images/background/services-2.png" title="services-1" alt="services-1" width="100%"/>
+                       </div>
+                
+                       <div class="services-content">
+                          <h4>GENERAL NEWS</h4>
+                          <h5>Creating a courier business plan</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
+                              aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
+                          <img src="images/icons/aerrow.png" title="aerrow" alt="aerrow" />
+                        </div>
+                    </div>
+            
+                </div>
+
+                <div class="w-3 w-md-2 w-sm-1">
+                    <div class="services-items">
+                       <div class="services-img">
+                           <img src="images/background/services-3.png" title="services-1" alt="services-1" width="100%"/>
+                       </div>
+                
+                       <div class="services-content">
+                          <h4>GENERAL NEWS</h4>
+                          <h5>Creating a courier business plan</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean l
+                              aoreet lacus sed ex pharetra, vel pretium justo facilisis. Proin fringilla luctus tortor nec vehicul</p>
+                          <img src="images/icons/aerrow.png" title="aerrow" alt="aerrow" />
+                        </div>
+                    </div>
+            
+                </div>
+              </div>			
+         </div>
+    </div>
+  </section>
 
 <!-- FOOTER -->
 
+<footer>
+   <div class="container">
+      <div class="footer-tite d-flex justify-between align-center Today I came this morning and made the page  created responsive and  3 new sections.">
+         <h4>Get In Touch</h4>
+         <div class="icons w-sm-1">
+            <img src="images/icons/linkdin.png" title="linkdin" alt="linkdin"/>
+            <img src="images/icons/facebook.png" title="facebook" alt="facebook"/>
+            <img src="images/icons/twiiter.png" title="twiiter" alt="twiiter"/>
+            <img src="images/icons/insta.png" title="insta" alt="insta"/>
+         </div>
+        </div>
+      <div class="footer-inner">
+           <div class="row">
+                <div class="w-3 w-md-2 w-sm-1">
+                    <div class="footer-items">
+                        <div class="call d-flex align-center">
+                        <img src="images/icons/call.png" width="40px" title="call" alt="call">
+                        <a href="javascript:void(0)">01234567890</a>
+                     </div>
+                    <div class="mail d-flex align-center">
+                            <img src="images/icons/mail.png" width="40px" title="mail" alt="mail"/>
+                            <a href="javascript:void(0)">hello@abg.co.uk</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-3 w-md-2 w-sm-1">
+                    <div class="footer-items">
+                        <div class="call d-flex align-center">
+                        <img src="images/icons/map.png" width="40px" title="map" alt="map">
+                        <a href="javascript:void(0)">110 Road name here <br>Town or place<br> Dl12 SQU</a>
+                        </div>
+                        <p class="richtext">GET DIRECTIONS</p>
+                    </div>
+                </div>
+
+                <div class="w-3  w-md-2 w-sm-1">
+                    <div class="footer-items">
+                        <div class="sign-up">
+                            <h5>Sign Up & Stay Updated</h5>
+                            <form>
+                                <input placeholder="enter your email address"/>
+                                 <button type="submit"><img src="images/icons/aerrow.png" alt="aerrow"></button>
+                            </form>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/swiper-bundle.min.js" type="text/javascript"></script>
+<script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+
+<script>
+    $(".toggle").click(function () {
+        $("nav").slideToggle();
+      });
+
+</script>
 </body>
 </html>
