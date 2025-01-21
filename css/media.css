@@ -20,6 +20,7 @@
 		padding: 10px 0;
 	}
 	
+	
 }
 
 
@@ -51,8 +52,13 @@
 	.w-md-1{
 		width: 100%;
 	}
-
-
+	.banner-content {
+		
+		padding: 110px 0;
+	}
+	.two-section {
+		transform: translateY(-4%);
+	}
 	.logos-items{
 		margin-bottom: 30px;
 	}
@@ -76,19 +82,69 @@
     .topbar{
 		display: none;
 	}
+	header{
+		z-index: 999;
+	}
 	.navigation{
 		transform: translateY(0);
+		padding: 0;
+		
 	}
 	.navigation nav{
 		display: none;
+		text-align: left!important;
+		padding: 0;
+		
+	
 	}
 	.button-we{
 		margin-bottom: 30px;
 	}
+	.button{
+	  color: var(--theme-dark-gray);
+	  border: 1px solid var(--theme-dark-gray);
+
+	}
+	.banner{	
+		z-index: -1;
+	}
+	.banner-content{
+		padding:  0;
+		flex-direction: column;
+		display: flex;
+		
+	 
+	 }
+	.banner-img{
+		background:rgb(0,0,0,0.2);
+		 background-size:cover;
+		 max-width:100%;
+		padding:0;
+		background-blend-mode:darken;
+		position: static;
+		min-height: 100vh;
+		
+	 }
+	 .banner-heading{
+		color: black;
+		font-size:48px;
+	 }
+	 .richtext{
+		color: black;
+		font-size: 20px;
+	 }
+	 .button-1{
+		border: 1px solid black;
+		color: var(--theme-dark-gray);
+	 }
+	 .banner-content{
+		color:black;
+		
+	 }
 	.two-section{
 		transform: translateY(0);
-		margin: 40px 0;
-	}
+		margin: 286px 0 0 0;
+    }
 	.two-col-heading{
 		text-align: center;
 
@@ -98,21 +154,35 @@
 		
 	}
 	.toggle{
-		display: block;
+		display:block;
 	}
 	.footer-items .richtext{
 		text-align: left;
 	}
-	
+	.navigation{
+		position:inherit;
+		padding: 10px 0;
+	}
+	.logo-dark{
+		display: block;
+	 }
+	 .logo-light{
+		display: none;
+	 }
+	 .toggle{
+		color: var(--theme-dark-gray);
+	 }
 	.navigation nav ul{
 		flex-direction: column;
-		top: 100%;
+		top: 104%;
 		left:0;
 		position: absolute;
 		transition: 0.4s all;
 		background-color: white;
-		width: 100%;
+		box-shadow: inset;
 		justify-content: flex-start;
+		text-align: left;
+		right: 0;
 	}
 
 	.navigation li , button{
@@ -138,5 +208,16 @@
 	.w-xs-1{
 		width:100%;
 	}
+
+	.two-section{
+		transform: translateY(0);
+		margin: 326px 0 0 0;
+    }
    
+}
+@media (max-width:475px){
+	.two-section{
+		transform: translateY(0);
+		margin: 406px 0 0 0;
+    }
 }

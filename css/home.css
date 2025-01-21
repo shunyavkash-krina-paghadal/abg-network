@@ -40,6 +40,10 @@ body{
 .w-3{
   width: 33.33%;
 }
+.d-none{
+
+   display: none;
+}
 
 .w-6{
    width: 16.66%;
@@ -68,9 +72,11 @@ h2,h3{
    padding: 10px 0;
    position: fixed;
    width: 100%;
+   position: relative;
    top:0;
    left:0;
    z-index: 999;
+ 
 }
 .header-span{
    color: var(--theme-white);
@@ -84,9 +90,10 @@ h2,h3{
 }
 .navigation{
    position:absolute ;
-   top:60px;
    right: 0;
    left: 10px;
+   z-index: 1;
+   /* margin-top: 40px; */
 
 }
 .back-to-top{
@@ -139,18 +146,28 @@ nav li{
    color: var(--theme-white);
    display: none;
 }
+
 /* ENDS HEADER */
 
 /* BANNER */
 
 .banner{
-   background:url(/images/background/banner.png),rgb(0,0,0,0.2);
+  position: relative;
+  height: 100vh;
+  display:block;
+  min-height: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  
+}
+.banner-img{
+   background:rgb(0,0,0,0.2);
 	background-size:cover;
 	width:100%;
-   padding: 90px;
+   padding:0;
+   position: absolute;
    background-blend-mode:darken;
-	
-   
 }
 .button-we{
    background-color: var(--theme-light-green);
@@ -161,12 +178,16 @@ nav li{
    margin-right:16px ;
 }
 .banner-content{
-   margin: auto;
-   padding: 180px 0;
    text-align: center;
+   color: black;
+   z-index: 0;
+   margin: 0 auto;
+   padding: 250px 0;
+   
+
 }
 .banner-heading {
-   color: var(--theme-white);
+   color:var(--theme-white);
    font-size: 55px;
    font-weight: 400;
    padding: 10px 0;
@@ -183,16 +204,20 @@ nav li{
 /* TWO-COL-SECTION */
 
 .two-section{
-   transform: translateY(-28%);
+   transform: translateY(-20%);
+   margin-bottom: 40px;
 }
 .two-col-img{
    padding-right: 16px;
+   width: 100%;
    
 }
 .two-items{
    position: relative;
 
 }
+
+
 .two-col-content{
    position: absolute;
    left:0;
@@ -275,7 +300,9 @@ nav li{
   width: 100%;
   display: block;
   object-fit: cover;
+  
 }
+
 .services-title{
    margin:20px 0 50px 0;
 }
@@ -320,6 +347,11 @@ nav li{
    background-color: var(--theme-light-green);
    padding: 10px ;
    border-radius: 50%;
+   overflow: hidden;
+  
+}
+.services-items .services-img img:hover{
+   filter: contrast(50%);
 }
 
 
