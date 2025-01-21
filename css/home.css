@@ -60,7 +60,7 @@ h1{
    font-size: 16px;
    line-height: 1.5;
 }
-h2,h3{
+h2{
    font-size: 60px;
    line-height: 1.3;
 }
@@ -274,7 +274,7 @@ nav li{
      font-size: 17px;
      line-height: 1.7;
 }
-/* END--WE-DO */
+/* END-WE-DO */
 
 
 
@@ -285,6 +285,76 @@ nav li{
 }
 
 /* LOGOS-ENDS */
+
+
+/* progress */
+
+ 
+ .process {
+   text-align: center;
+   margin: 100px  0;
+ }
+ .process-title .richtext{
+   max-width: 600px;
+   color: var(--theme-dark-gray);
+   margin: auto;
+   padding-bottom: 60px;
+ }
+ .process-title h4{
+   font-size: 39px;
+   padding-bottom:10px;
+ }
+ .process-items{
+   box-shadow: 5px 5px rgb(248, 248, 249), 10px 10px rgb(251, 251, 251), 15px 15px rgb(251, 253, 251);
+   text-align: center;
+   margin-right: 30px;
+ }
+ .process-img{
+   background-color: var(--theme-light-green);
+   border-radius: 50%;
+   width: 150px;
+   height: 150px;
+   position: relative;
+   margin: auto;
+   
+ }
+ .process-img img{
+   align-items: center;
+   padding: 25px 0;
+ }
+ .process-img h3{
+   background-color: var(--theme-dark-gray);
+   color: white;
+   position: absolute;
+   bottom:20px;
+   right:-1%;
+   border-radius: 50%;
+   padding: 10px 17px;
+ }
+ .process-content{
+   margin-top:20px;
+ }
+ .process-content h4{
+    color: #2C3646;
+    font-size:28px;
+ }
+ .process-content h5{
+   color: #2C3646;
+   font-size:17px;
+   font-weight: 100;
+   max-width: 250px;
+   margin: auto;
+   line-height: 30px;
+   padding: 10px 0;
+}
+ .step-icon i {
+   font-size: 24px;
+   color: #333;
+ }
+ 
+
+ 
+
 
 /* SERVICES */
 .services-content{

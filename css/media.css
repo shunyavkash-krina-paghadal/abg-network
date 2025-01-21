@@ -35,6 +35,12 @@
 	.w-lg-3{
 		width: 33.33%;
 	}
+	.w-lg-2{
+		width: 50%;
+	}
+	.process-items{
+		padding-bottom: 40px;
+	}
 }
 
 
